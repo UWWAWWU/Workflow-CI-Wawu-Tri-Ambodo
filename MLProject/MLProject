@@ -1,10 +1,7 @@
-name: Breast_Cancer_Project
+name: breast-cancer-project
 
 python_env: python_env.yaml
 
 entry_points:
   main:
     command: "python modelling.py"
-
-  tuning:
-    command: "python modelling_tuning.py"
