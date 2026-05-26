@@ -1,15 +1,9 @@
-name: mlflow-env
+python: "3.11"
 
-channels:
-  - defaults
+build_dependencies:
+  - pip==24.0
+  - setuptools
+  - wheel==0.43.0
 
 dependencies:
-  - python=3.11
-  - pip
-  - pip:
-      - mlflow==2.19.0
-      - pandas
-      - numpy
-      - scikit-learn
-      - matplotlib
-      - seaborn
+  - -r requirements.txt
