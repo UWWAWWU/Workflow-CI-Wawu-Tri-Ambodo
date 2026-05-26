@@ -8,8 +8,8 @@ from sklearn.linear_model import LogisticRegression
 mlflow.sklearn.autolog()
 
 # load dataset
-train_df = pd.read_csv('breast_cancer_preprocessing/train.csv')
-test_df = pd.read_csv('breast_cancer_preprocessing/test.csv')
+train_df = pd.read_csv('../breast_cancer_preprocessing/train.csv')
+test_df = pd.read_csv('../breast_cancer_preprocessing/test.csv')
 
 # split feature dan target
 X_train = train_df.drop('target', axis=1)
